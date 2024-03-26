@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cinema</title>
+</head>
+
+<body>
+    <main>
+        <div id="escolha_filme">
+            <label for="select">Escolha um lugar</label>
+            <select name="filmes" id="filmes">
+                <option value="">Escolha um filme</option>
+                <optgroup label="14:00">
+                    <option value="50">Os Vingadores</option>
+                    <option value="60">Homem-Formiga</option>
+                    <option value="20">As Marvels</option>
+                    <option value="50">Bad Boys</option>
+                </optgroup>
+
+                <optgroup label="17:00">
+                    <option value="40">O Iluminado</option>
+                    <option value="70">Star Wars: Ronin</option>
+                    <option value="80">Pantera Negra</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <!--Frame para adicionar uma página dentro desta página-->
+        <iframe id="frame" class="hiden" src="" frameborder="0"></iframe>  
+
+        <div id="informacoes_poltrona">
+            <div class="poltrona poltrona_vazia"></div>
+            <span>N/A</span>
+
+            <div class="poltrona poltrona_selecionada"></div>
+            <span>Selecionado</span>
+
+            <div class="poltrona poltrona_ocupada"></div>
+            <span>Ocupado</span>
+        </div>
+
+        <div id="poltronas">
+            <div id="tela"><p>Tela</p></div>
+
+            <div class="linha_poltrona">
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_ocupada"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_selecionada"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+            </div>
+
+            <div class="linha_poltrona">
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+            </div>
+
+            <div class="linha_poltrona">
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+            </div>
+
+            <div class="linha_poltrona">
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+            </div>
+
+            <div class="linha_poltrona">
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+            </div>
+
+            <div class="linha_poltrona">
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+                <div class="poltrona poltrona_vazia"></div>
+            </div>
+
+        </div>
+
+        <div id="texto_selecionado">
+            <p>Você selecionou <span id="count">0</span> 
+                assentos no valor de R$ <span id="total">0</span></p>
+        </div>
+
+    </main>
+</body>
+
+</html>

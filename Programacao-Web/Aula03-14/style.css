@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Dimensões utilizam borda e margem*/
+
+    font-family: "Inter", sans-serif;
+    color: #F0F8FF;
+}
+
+body {
+    background: #242333;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#escolha_filme {
+    margin-bottom: 37px;
+}
+
+#escolha_filme select{
+    width: 250px;
+    height: 25px;
+    margin-left: 24px;
+    border-radius: 2px;
+    
+    text-align: center;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+#escolha_filme select, option, optgroup {
+    font-size: 16px;
+    color: black;
+}
+
+#informacoes_poltrona {
+    background: #0000001A;
+    width: 359px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 34px;
+}
+
+#informacoes_poltrona .poltrona{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.poltrona {
+    width: 20px;
+    height: 15px;
+    
+    border-radius: 10px 10px 0px 0px;
+}
+
+.poltrona_vazia{
+    background: #444451;
+}
+
+.poltrona_selecionada{
+    background: #56B4BD;
+}
+
+.poltrona_ocupada{
+    background: #FFFFFF;
+}
+
+#poltronas {
+    -webkit-perspective: 500px;
+    -moz-perspective: 500px;
+    perspective: 500px;
+}
+
+#tela {
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 23px;
+    transform: rotateX(-45deg);
+}
+
+#tela p {
+    font-size: 25px;
+    color: black;
+}
+
+.linha_poltrona {
+    display: flex;
+    gap: 15px;
+}
+
+.linha_poltrona .poltrona{
+    margin-bottom: 10px;
+}
+
+
+.linha_poltrona .poltrona:not(.poltrona_ocupada):hover {
+    transform: scale(1.2);
+}
+
+.linha_poltrona .poltrona:nth-child(2) {
+    margin-right: 10px;
+}
+
+.linha_poltrona .poltrona:nth-child(6) {
+    margin-right: 10px;
+}
+
+#texto_selecionado {
+    margin-top: 25px;
+}
+
+.hiden {
+    display: none;
+}

@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+
+    background-color: aqua;
+}
+
+header {
+    background-color: rgb(150, 66, 66);
+    padding: 10px 20px;
+}
+
+
+.container {
+    width: 450px;
+    display: flex;
+    padding: 15px 0px;
+    margin-left: calc(50% - 200px);
+    margin-bottom: 20px;
+
+    border: 1px solid salmon;
+    border-radius: 10px 15px;
+
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ff0000;
+    text-align: center;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+p {
+    margin-left: 20px;
+}
+
+header a {
+    color: aliceblue;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* O # serve para identificar o id do elemento HTML*/
+
+#bolo1{
+    width: 150px;
+    height: 150px;
+}
+
+#bolo2{
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+table {
+    margin-top: 50px;
+}
