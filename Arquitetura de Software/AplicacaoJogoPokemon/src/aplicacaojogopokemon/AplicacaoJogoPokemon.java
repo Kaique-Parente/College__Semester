@@ -6,6 +6,7 @@ package aplicacaojogopokemon;
 
 import cartaspokemon.CartaPokemon;
 import cartaspokemon.TipoPokemon;
+import gamemanager.GameManager;
 import itens.TipoItens;
 import jogador.Jogador;
 
@@ -33,6 +34,11 @@ public class AplicacaoJogoPokemon {
         System.out.println(romano.getNomeCarta());
         
     
+        GameManager gm = GameManager.getInstance("Kaique");
+        gm.iniciarMenu();
+
+        GameManager gt = GameManager.getInstance("NaoTrocarNome");
+        gt.iniciarMenu();
     }
     
 }
