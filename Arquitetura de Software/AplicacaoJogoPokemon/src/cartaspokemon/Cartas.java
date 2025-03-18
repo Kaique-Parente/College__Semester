@@ -12,8 +12,10 @@ public interface Cartas {
     
     public String getNome();
     public boolean adicionaCarta(CartaPokemon pkm);
+    public boolean evoluirPokemon(TipoPokemon pkmInicial, TipoPokemon pkmEvoluido);
     public int getHP();
     public int getATK();
+    public int getATKESP();
     public int getDEF();
     public CartaPokemon[] getCartas();
     

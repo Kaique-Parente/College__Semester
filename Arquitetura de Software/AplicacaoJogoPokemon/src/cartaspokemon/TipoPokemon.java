@@ -16,6 +16,8 @@ public enum TipoPokemon {
         @Override
         public int getATK() { return 5;};
         @Override
+        public int getATKESP() { return 8 ;}
+        @Override
         public int getDEF() {return 10;};
     },
     CHARMELEON{
@@ -24,12 +26,15 @@ public enum TipoPokemon {
         @Override
         public int getATK() { return 12;};
         @Override
+        public int getATKESP() { return 15 ;}
+        @Override
         public int getDEF() {return 6;};
     
     };
     
     abstract int getHP();
     abstract int getATK();
+    abstract int getATKESP();
     abstract int getDEF();
     
     

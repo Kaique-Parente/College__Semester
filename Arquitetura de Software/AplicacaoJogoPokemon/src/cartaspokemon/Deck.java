@@ -60,8 +60,26 @@ public class Deck implements Cartas{
     }
 
     @Override
+    public int getATKESP() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getATKESP'");
+    }
+
+    @Override
     public int getDEF() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public boolean evoluirPokemon(TipoPokemon pkmInicial, TipoPokemon pkmEvoluido) {
+        for(CartaPokemon carta : deck){
+            if(carta.getNome().equals(pkmInicial.name())){
+                carta.evoluirPokemon(pkmInicial, pkmEvoluido);
+                return true;
+            }
+            System.out.println(carta.getNome());
+        }
+        return false;
     }
     
 }

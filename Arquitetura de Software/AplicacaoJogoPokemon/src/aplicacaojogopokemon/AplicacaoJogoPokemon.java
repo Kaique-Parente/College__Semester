@@ -22,17 +22,25 @@ public class AplicacaoJogoPokemon {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Jogador romano = new Jogador(new CartaPokemon(TipoPokemon.CHARMELEON), 
+        Jogador romano = new Jogador(new CartaPokemon(TipoPokemon.CHARMANDER), 
                                     TipoItens.BAND, 
                                     100 );
         
         
         
         System.out.println(romano.getNomeCarta());
-        romano.adicionaCarta(new CartaPokemon(TipoPokemon.CHARMELEON));
         
+        System.out.println("-------------");
+        System.out.println(romano.getCartas().evoluirPokemon(TipoPokemon.CHARMANDER, TipoPokemon.CHARMELEON));
         System.out.println(romano.getNomeCarta());
+        /*boolean resultEvolution = romano.getCartas().evoluirPokemon(TipoPokemon.CHARMANDER, TipoPokemon.CHARMELEON);
         
+        if(resultEvolution){
+            System.out.println("O seu pokemon conseguiu evoluir!");
+        } else {
+            System.out.println("O seu pokemon não conseguiu evoluir!");
+        }
+            */
     
         GameManager gm = GameManager.getInstance("Kaique");
         gm.iniciarMenu();

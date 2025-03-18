@@ -40,6 +40,11 @@ public class CartaPokemon implements Cartas{
     public int getATK(){
         return this.pkm.getATK();
     }
+
+    @Override
+    public int getATKESP(){
+        return this.pkm.getATKESP();
+    }
     
     @Override
     public int getDEF(){
@@ -57,6 +62,17 @@ public class CartaPokemon implements Cartas{
         tmp[0] = new CartaPokemon(this.pkm);
         
         return tmp;
+    }
+
+    @Override
+    public boolean evoluirPokemon(TipoPokemon pkmInicial, TipoPokemon pkmEvoluido) {
+
+        if(pkmInicial == null || pkmEvoluido == null){
+            return false;
+        }
+
+        this.pkm = pkmEvoluido;
+        return true;
     }
     
 }

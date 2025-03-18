@@ -35,6 +35,10 @@ public class Jogador {
     public String getNomeCarta(){
         return carta.getNome();
     }
+
+    public Cartas getCartas(){
+        return carta;
+    }
     
     public boolean adicionaCarta(CartaPokemon cpkm){
         if(carta.getClass().getSimpleName().equals("CartaPokemon")){
