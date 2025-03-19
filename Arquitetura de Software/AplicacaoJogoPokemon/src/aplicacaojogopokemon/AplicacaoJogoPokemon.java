@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 import cartaspokemon.CartaPokemon;
 import cartaspokemon.TipoPokemon;
+import gamemanager.BatalhaFacade;
 import gamemanager.GameManager;
 import itens.TipoItens;
 import jogador.Jogador;
@@ -42,6 +43,7 @@ public class AplicacaoJogoPokemon {
         System.out.println(romano.getCartas().getATK());
         */
 
+        /* Teste de evolução com DECK
         romano.adicionaCarta(new CartaPokemon(TipoPokemon.CHARMANDER));
         System.out.println(romano.getCartas());
 
@@ -59,6 +61,16 @@ public class AplicacaoJogoPokemon {
             System.out.println(lsc[i].getNome());
             System.out.println("Ataque: " + lsc[i].getATK());
         }
+
+        */
+
+        Jogador luan = new Jogador(new CartaPokemon(TipoPokemon.CHARMELEON), TipoItens.POCAO, 12);
+
+        BatalhaFacade batalha = new BatalhaFacade();
+        TipoPokemon pkm1;
+        
+
+        batalha.atacar(romano, 5, luan, 2);
 
         GameManager gm = GameManager.getInstance("Kaique");
         gm.iniciarMenu();

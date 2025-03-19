@@ -18,7 +18,4 @@ public interface Cartas {
     public int getATKESP();
     public int getDEF();
     public CartaPokemon[] getCartas();
-    
-    
-    
 }

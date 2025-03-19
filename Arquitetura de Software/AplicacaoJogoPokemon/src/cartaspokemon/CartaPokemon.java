@@ -35,7 +35,7 @@ public class CartaPokemon implements Cartas{
     public int getHP(){
         return this.pkm.getHP();
     }
-    
+
     @Override
     public int getATK(){
         return this.pkm.getATK();
