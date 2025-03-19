@@ -4,6 +4,8 @@
  */
 package aplicacaojogopokemon;
 
+import java.util.ArrayList;
+
 import cartaspokemon.CartaPokemon;
 import cartaspokemon.TipoPokemon;
 import gamemanager.GameManager;
@@ -24,9 +26,9 @@ public class AplicacaoJogoPokemon {
         
         Jogador romano = new Jogador(new CartaPokemon(TipoPokemon.CHARMANDER), TipoItens.BAND, 100 );
 
-        System.out.println(romano.getNomeCarta());
-        
         System.out.println("-------------");
+       
+        /* Teste de evolução com apenas uma carta
         System.out.println(romano.getNomeCarta());
         System.out.println(romano.getCartas().getATK());
 
@@ -38,6 +40,25 @@ public class AplicacaoJogoPokemon {
         }
         System.out.println(romano.getNomeCarta());
         System.out.println(romano.getCartas().getATK());
+        */
+
+        romano.adicionaCarta(new CartaPokemon(TipoPokemon.CHARMANDER));
+        System.out.println(romano.getCartas());
+
+        boolean isEvolved = romano.getCartas().evoluirPokemon(TipoPokemon.CHARMANDER, TipoPokemon.CHARMELEON);
+        
+        if(isEvolved){
+            System.out.println("Pokemon evoluido com sucesso!");
+        }else {
+            System.out.println("O seu pokemon não conseguiu evoluir!");
+        }
+
+        System.out.println(romano.getNomeCarta());
+        CartaPokemon[] lsc = romano.getCartas().getCartas();
+        for(int i=0; i<lsc.length; i++){
+            System.out.println(lsc[i].getNome());
+            System.out.println("Ataque: " + lsc[i].getATK());
+        }
 
         GameManager gm = GameManager.getInstance("Kaique");
         gm.iniciarMenu();
